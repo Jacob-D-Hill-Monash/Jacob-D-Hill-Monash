@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Australian antarctic bases",
+  "width": 800,
+  "height": 600,
+  "projection": {"type": "azimuthalEqualArea","rotate": [220,0,0]},
+  "layer": [
+    {
+      "data": {
+        "url": "data/ne_110m.json",
+        "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+      },
+      "mark": {"type": "geoshape","fill":null,"stroke": "darkgray"},
+      "transform": [
+        {
+          "lookup": "properties.NAME",
+          "from": {
+            "data": {
+              "url": "data/Facilities_Nov2024.csv"
+            },
+            "key": "Country",
+            "fields": ["Year Established"]
+          }
+        },
+        {"calculate": "datum.Year_Established + 0.1", "as": "Year Established"}
+      ]
+    },
+    {
+      "mark": {"type": "circle", "opacity": 0.4, "size": 15},
+      "encoding": {
+        "longitude": {"field": "longitude (DDM)", "type": "quantitative"},
+        "latitude": {"field": "latitude (DDM)", "type": "quantitative"},
+        "color": {
+          "field": "Year Established",
+          "type": "quantitative",
+          "scale": {"type": "linear","scheme": "purples","reverse":false}
+        },
+        "tooltip": [
+          {"field": "properties.Operator_(primary)", "type": "nominal", "title": "Country"}
+        ]
+      }
+    }
+
+  ]
+}
