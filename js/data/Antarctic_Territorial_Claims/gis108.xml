@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DIF xmlns="http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/" xmlns:dif="http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/ http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/dif_v9.9.3.xsd">
+  <Entry_ID>gis108</Entry_ID>
+  <Entry_Title>Antarctic Territorial Claims GIS</Entry_Title>
+  <Data_Set_Citation>
+    <Dataset_Creator>Harris, U.</Dataset_Creator>
+    <Dataset_Title>Antarctic Territorial Claims GIS</Dataset_Title>
+    <Dataset_Series_Name>CAASM Metadata</Dataset_Series_Name>
+    <Dataset_Release_Date>2009-06-12</Dataset_Release_Date>
+    <Dataset_Publisher>Australian Antarctic Data Centre</Dataset_Publisher>
+    <Version>1</Version>
+    <Online_Resource>https://data.aad.gov.au/metadata/gis108</Online_Resource>
+  </Data_Set_Citation>
+  <Personnel>
+    <Role>INVESTIGATOR</Role>
+    <Role>TECHNICAL CONTACT</Role>
+    <First_Name>URSULA</First_Name>
+    <Last_Name>HARRIS</Last_Name>
+    <Email>gis@aad.gov.au</Email>
+    <Phone>+61 3 6232 3519</Phone>
+    <Fax>+61 3 6232 3351</Fax>
+    <Contact_Address>
+      <Address>Australian Antarctic Division</Address>
+      <Address>203 Channel Highway</Address>
+      <City>Kingston</City>
+      <Province_or_State>Tasmania</Province_or_State>
+      <Postal_Code>7050</Postal_Code>
+      <Country>Australia</Country>
+    </Contact_Address>
+  </Personnel>
+  <Personnel>
+    <Role>DIF AUTHOR</Role>
+    <First_Name>ANGELA</First_Name>
+    <Last_Name>BENDER</Last_Name>
+    <Contact_Address>
+      <Address>Australian Antarctic Division</Address>
+      <Address>203 Channel Highway</Address>
+      <City>Kingston</City>
+      <Province_or_State>Tasmania</Province_or_State>
+      <Postal_Code>7050</Postal_Code>
+      <Country>Australia</Country>
+    </Contact_Address>
+  </Personnel>
+  <Discipline>
+    <Discipline_Name>EARTH SCIENCE</Discipline_Name>
+  </Discipline>
+  <Parameters>
+    <Category>EARTH SCIENCE</Category>
+    <Topic>HUMAN DIMENSIONS</Topic>
+    <Term>ENVIRONMENTAL GOVERNANCE/MANAGEMENT</Term>
+    <Variable_Level_1>LAND MANAGEMENT</Variable_Level_1>
+  </Parameters>
+  <ISO_Topic_Category>ENVIRONMENT</ISO_Topic_Category>
+  <ISO_Topic_Category>IMAGERY/BASE MAPS/EARTH COVER</ISO_Topic_Category>
+  <ISO_Topic_Category>PLANNING CADASTRE</ISO_Topic_Category>
+  <Keyword>CLAIM</Keyword>
+  <Keyword>ANTARCTICA</Keyword>
+  <Keyword>GIS</Keyword>
+  <Keyword>TERRITORY</Keyword>
+  <Keyword>SOUTHERN OCEAN</Keyword>
+  <Sensor_Name>
+    <Short_Name>NOT APPLICABLE</Short_Name>
+  </Sensor_Name>
+  <Source_Name>
+    <Short_Name>MAPS</Short_Name>
+  </Source_Name>
+  <Temporal_Coverage>
+    <Start_Date>2003-07-30</Start_Date>
+    <Stop_Date>2009-06-12</Stop_Date>
+  </Temporal_Coverage>
+  <Data_Set_Progress>COMPLETE</Data_Set_Progress>
+  <Spatial_Coverage>
+    <Southernmost_Latitude>-90</Southernmost_Latitude>
+    <Northernmost_Latitude>-60</Northernmost_Latitude>
+    <Westernmost_Longitude>-180</Westernmost_Longitude>
+    <Easternmost_Longitude>180</Easternmost_Longitude>
+  </Spatial_Coverage>
+  <Location>
+    <Location_Category>OCEAN</Location_Category>
+    <Location_Type>SOUTHERN OCEAN</Location_Type>
+  </Location>
+  <Location>
+    <Location_Category>CONTINENT</Location_Category>
+    <Location_Type>ANTARCTICA</Location_Type>
+  </Location>
+  <Location>
+    <Location_Category>GEOGRAPHIC REGION</Location_Category>
+    <Location_Type>POLAR</Location_Type>
+  </Location>
+  <Quality>The data has been produced for small scale use only.
+
+Definitions of the territories as compiled by R.K.Headland (Scott Polar Research Institute) 20 April 1998 from historical information and presented at an Antarctic Treaty meeting. Bruce Hull (Policy AAD) provided a copy to the Australian Antarctic Data Centre.
+
+The dataset consists of three shapefiles for use in a Geographical Information System (GIS).
+1. Polygon data representing each claim. The data are stored with a polar stereographic projection.
+2. Line data representing each claim. The data is stored with a polar stereographic projection.
+3. Line data representing each claim. The data are stored unprojected in latitudes and longitudes.
+
+Territorial claim boundary lines of longitude generated at 0.1 degree intervals. Boundaries clipped to the Antarctic coastline using 1:10 million scale data from the Antarctic Digital Database version 5.
+
+The northern and southern limit of Norway's claim is undefined.</Quality>
+  <Access_Constraints>Stored data format: ArcView shapefiles. Available format type: ArcView shapefiles. Stored in a polar stereographic projection
+
+These data are publicly available for download from the provided URL.</Access_Constraints>
+  <Use_Constraints>This data set conforms to the CCBY Attribution License
+(http://creativecommons.org/licenses/by/4.0/).
+
+Please follow instructions listed in the citation reference provided at http://data.aad.gov.au/aadc/metadata/citation.cfm?entry_id=gis108 when using these data.</Use_Constraints>
+  <Data_Set_Language>English</Data_Set_Language>
+  <Originating_Center>Australian Antarctic Division</Originating_Center>
+  <Data_Center>
+    <Data_Center_Name>
+      <Short_Name>AU/AADC</Short_Name>
+      <Long_Name>Australian Antarctic Data Centre, Australia</Long_Name>
+    </Data_Center_Name>
+    <Data_Center_URL>http://data.aad.gov.au</Data_Center_URL>
+    <Personnel>
+      <Role>DATA CENTER CONTACT</Role>
+      <First_Name>DATA OFFICER</First_Name>
+      <Last_Name>AADC</Last_Name>
+      <Email>metadata@aad.gov.au</Email>
+      <Phone>+61 3 6232 3244</Phone>
+      <Fax>+61 3 6232 3351</Fax>
+      <Contact_Address>
+        <Address>Australian Antarctic Division</Address>
+        <Address>203 Channel Highway</Address>
+        <City>Kingston</City>
+        <Province_or_State>Tasmania</Province_or_State>
+        <Postal_Code>7050</Postal_Code>
+        <Country>Australia</Country>
+      </Contact_Address>
+    </Personnel>
+  </Data_Center>
+  <Distribution>
+    <Distribution_Media>HTTP</Distribution_Media>
+    <Distribution_Size>12.74 MB</Distribution_Size>
+    <Distribution_Format>shapefiles</Distribution_Format>
+    <Fees>free</Fees>
+  </Distribution>
+  <Summary>
+    <Abstract>Antarctic Territorial Claims GIS Dataset. This dataset is based on data displayed on the map 'Antarctica' published in 1979. The map states 'The indication of boundaries on this map and the description of the areas within them are intended to agree with national legislation of the countries concerned but are not to be treated as evidence of the official views of the Government of Australia with respect to the national legislation of other countries.'
+
+The dataset represents Antarctic Territorial Claims from the south pole to the Antarctic coastline for each nation.</Abstract>
+  </Summary>
+  <Related_URL>
+    <URL_Content_Type>
+      <Type>GET DATA</Type>
+    </URL_Content_Type>
+    <URL>https://data.aad.gov.au/eds/2179/download</URL>
+    <Description>Download three shapefiles representing claims.</Description>
+  </Related_URL>
+  <Related_URL>
+    <URL_Content_Type>
+      <Type>VIEW RELATED INFORMATION</Type>
+    </URL_Content_Type>
+    <URL>http://data.aad.gov.au/aadc/ftc/index.cfm</URL>
+    <Description>Search the SCAR Feature Catalogue, dataset identifiers and quality information indicators</Description>
+  </Related_URL>
+  <Related_URL>
+    <URL_Content_Type>
+      <Type>VIEW RELATED INFORMATION</Type>
+    </URL_Content_Type>
+    <URL>http://data.aad.gov.au/aadc/metadata/citation.cfm?entry_id=gis108</URL>
+    <Description>Citation reference for this metadata record and dataset</Description>
+  </Related_URL>
+  <Related_URL>
+    <URL_Content_Type>
+      <Type>GET RELATED VISUALIZATION</Type>
+      <Subtype>MAP</Subtype>
+    </URL_Content_Type>
+    <URL>http://data.aad.gov.au/aadc/mapcat/display_map.cfm?map_id=151</URL>
+    <Description>1:10 000 000 map of Antarctica, Edition 6</Description>
+  </Related_URL>
+  <Related_URL>
+    <URL_Content_Type>
+      <Type>VIEW RELATED INFORMATION</Type>
+    </URL_Content_Type>
+    <URL>http://data.aad.gov.au/aadc/mapcat/display_map.cfm?map_id=13115</URL>
+    <Description>1:20 000 000 map of Antarctica and the Southern Ocean, Edition 8</Description>
+  </Related_URL>
+  <IDN_Node>
+    <Short_Name>AMD/AU</Short_Name>
+  </IDN_Node>
+  <IDN_Node>
+    <Short_Name>CEOS</Short_Name>
+  </IDN_Node>
+  <IDN_Node>
+    <Short_Name>AMD</Short_Name>
+  </IDN_Node>
+  <Originating_Metadata_Node>AADC</Originating_Metadata_Node>
+  <Metadata_Name>CEOS IDN DIF</Metadata_Name>
+  <Metadata_Version>VERSION 9.9.3</Metadata_Version>
+  <DIF_Creation_Date>2003-07-29</DIF_Creation_Date>
+  <Last_DIF_Revision_Date>2019-09-04</Last_DIF_Revision_Date>
+  <DIF_Revision_History>2008-08-12 - Record updated by Ursula Ryan. Reference to data not available removed from Access Constraints.
+2009-07-01 - record updated by Mark Morffew.
+2019-09-04 - record updated by Dave Connell - basic updates.</DIF_Revision_History>
+  <Extended_Metadata>
+    <Metadata>
+      <Group>gov.nasa.gsfc.gcmd</Group>
+      <Name>metadata.uuid</Name>
+      <Value>f384979d-f3db-412d-9414-8628797ae55a</Value>
+    </Metadata>
+    <Metadata>
+      <Group>gov.nasa.gsfc.gcmd</Group>
+      <Name>metadata.extraction_date</Name>
+      <Value>2019-09-04 14:38:19</Value>
+    </Metadata>
+    <Metadata>
+      <Group>gov.nasa.gsfc.gcmd</Group>
+      <Name>metadata.keyword_version</Name>
+      <Value>8.6</Value>
+    </Metadata>
+  </Extended_Metadata>
+</DIF>
