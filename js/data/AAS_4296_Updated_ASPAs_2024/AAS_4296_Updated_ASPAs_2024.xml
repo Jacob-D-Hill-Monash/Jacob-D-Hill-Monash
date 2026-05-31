@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DIF xmlns="http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/" xmlns:dif="http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/ http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/dif_v9.9.3.xsd">
+  <Entry_ID>AAS_4296_Updated_ASPAs_2024</Entry_ID>
+  <Entry_Title>Antarctic Specially Protected Areas (Points and Polygons) 2024 Update</Entry_Title>
+  <Data_Set_Citation>
+    <Dataset_Creator>Terauds, A.</Dataset_Creator>
+    <Dataset_Title>Antarctic Specially Protected Areas (Points and Polygons) 2024 Update</Dataset_Title>
+    <Dataset_Series_Name>CAASM Metadata</Dataset_Series_Name>
+    <Dataset_Release_Date>2024-11-07</Dataset_Release_Date>
+    <Dataset_Publisher>Australian Antarctic Data Centre</Dataset_Publisher>
+    <Version>1</Version>
+    <Dataset_DOI>doi:</Dataset_DOI>
+    <Online_Resource>https://data.aad.gov.au/metadata/AAS_4296_Updated_ASPAs_2024</Online_Resource>
+  </Data_Set_Citation>
+  <Personnel>
+    <Role>INVESTIGATOR</Role>
+    <Role>TECHNICAL CONTACT</Role>
+    <Role>DIF AUTHOR</Role>
+    <First_Name>ALEKS</First_Name>
+    <Last_Name>TERAUDS</Last_Name>
+    <Email>aleks.terauds@aad.gov.au</Email>
+    <Email>aleks.terauds@gmail.com</Email>
+    <Phone>+61 3 6232 3339</Phone>
+    <Contact_Address>
+      <Address>Australian Antarctic Division</Address>
+      <Address>203 Channel Highway</Address>
+      <City>Kingston</City>
+      <Province_or_State>Tasmania</Province_or_State>
+      <Postal_Code>7050</Postal_Code>
+      <Country>Australia</Country>
+    </Contact_Address>
+  </Personnel>
+  <Parameters>
+    <Category>EARTH SCIENCE</Category>
+    <Topic>HUMAN DIMENSIONS</Topic>
+    <Term>ENVIRONMENTAL IMPACTS</Term>
+    <Variable_Level_1>CONSERVATION</Variable_Level_1>
+  </Parameters>
+  <Parameters>
+    <Category>EARTH SCIENCE</Category>
+    <Topic>AGRICULTURE</Topic>
+    <Term>FOREST SCIENCE</Term>
+    <Variable_Level_1>FOREST CONSERVATION</Variable_Level_1>
+  </Parameters>
+  <ISO_Topic_Category>ENVIRONMENT</ISO_Topic_Category>
+  <ISO_Topic_Category>IMAGERY/BASE MAPS/EARTH COVER</ISO_Topic_Category>
+  <Keyword>ASPA</Keyword>
+  <Keyword>ANTARCTIC SPECIALLY PROTECTED AREAS</Keyword>
+  <Sensor_Name>
+    <Short_Name>Computer</Short_Name>
+    <Long_Name>Computer</Long_Name>
+  </Sensor_Name>
+  <Source_Name>
+    <Short_Name>MAPS</Short_Name>
+  </Source_Name>
+  <Temporal_Coverage>
+    <Start_Date>2024-01-01</Start_Date>
+    <Stop_Date>2024-12-31</Stop_Date>
+  </Temporal_Coverage>
+  <Data_Set_Progress>COMPLETE</Data_Set_Progress>
+  <Spatial_Coverage>
+    <Southernmost_Latitude>-90</Southernmost_Latitude>
+    <Northernmost_Latitude>-60</Northernmost_Latitude>
+    <Westernmost_Longitude>-180</Westernmost_Longitude>
+    <Easternmost_Longitude>180</Easternmost_Longitude>
+  </Spatial_Coverage>
+  <Location>
+    <Location_Category>GEOGRAPHIC REGION</Location_Category>
+    <Location_Type>POLAR</Location_Type>
+  </Location>
+  <Location>
+    <Location_Category>CONTINENT</Location_Category>
+    <Location_Type>ANTARCTICA</Location_Type>
+  </Location>
+  <Quality>See the readme file in the dataset download for more information.</Quality>
+  <Access_Constraints>These data are publicly available for download from the provided URL.</Access_Constraints>
+  <Use_Constraints>This data set conforms to the CCBY Attribution License (http://creativecommons.org/licenses/by/4.0/).
+
+Please follow instructions listed in the citation reference provided at http://data.aad.gov.au/aadc/metadata/citation.cfm?entry_id=AAS_4296_Updated_ASPAs_2018 when using these data.</Use_Constraints>
+  <Data_Set_Language>English</Data_Set_Language>
+  <Originating_Center>Australian Antarctic Division</Originating_Center>
+  <Data_Center>
+    <Data_Center_Name>
+      <Short_Name>AU/AADC</Short_Name>
+      <Long_Name>Australian Antarctic Data Centre, Australia</Long_Name>
+    </Data_Center_Name>
+    <Data_Center_URL>https://data.aad.gov.au</Data_Center_URL>
+    <Personnel>
+      <Role>DATA CENTER CONTACT</Role>
+      <First_Name>DATA OFFICER</First_Name>
+      <Last_Name>AADC</Last_Name>
+      <Email>metadata@aad.gov.au</Email>
+      <Phone>+61 3 6232 3244</Phone>
+      <Fax>+61 3 6232 3351</Fax>
+      <Contact_Address>
+        <Address>Australian Antarctic Division</Address>
+        <Address>203 Channel Highway</Address>
+        <City>Kingston</City>
+        <Province_or_State>Tasmania</Province_or_State>
+        <Postal_Code>7050</Postal_Code>
+        <Country>Australia</Country>
+      </Contact_Address>
+    </Personnel>
+  </Data_Center>
+  <Distribution>
+    <Distribution_Media>HTTP</Distribution_Media>
+    <Distribution_Size>2.3 MB</Distribution_Size>
+    <Distribution_Format>Shapefiles</Distribution_Format>
+    <Fees>Free</Fees>
+  </Distribution>
+  <Reference>
+    <Author>Wauchope, H., Shaw, J.D. and Terauds, A.</Author>
+    <Publication_Date>2019</Publication_Date>
+    <Title>A snapshot of biodiversity protection in Antarctica</Title>
+    <Series>Nature Communications</Series>
+    <Volume>10</Volume>
+    <Issue>1</Issue>
+    <DOI>doi:10.1038/s41467-019-08915-6</DOI>
+  </Reference>
+  <Reference>
+    <Author>Terauds, A. and Mazurek, R.</Author>
+    <Publication_Date>2023</Publication_Date>
+    <Title>Antarctic Specially Protected Areas and Antarctic Specially Managed Areas in the Australian Antarctic Territory - GIS polygon dataset</Title>
+    <Publisher>Australian Antarctic Data Centre</Publisher>
+    <DOI>doi:10.26179/5c1b10c534c19</DOI>
+  </Reference>
+  <Summary>
+    <Abstract>This is the 2024 data update.  For the 2018 update, please see the link below.
+
+Starting with the most recently updated polygon shapefile of ASPAs (Terauds and Lee 2016), which contained some minor improvement on the original ASPA spatial layer first made publicly available in 2011, we first cross-checked the location of ASPA polygons with the spatially explicit locations provided in the ASPAs Management Plans. Once polygons were aligned with the Management Plans, we then georeferenced the maps provided in the management plans to check the ASPA boundaries in relation to known landscape features, In some cases, there was a lack of concurrence between co-ordinates, PDF map, coastline, rock layer or Google Earth. In these cases the following protocol was followed: snap to coordinates (unless clearly wrong), otherwise align to rock outcrop layer based on the PDF map, otherwise align to coastline. Full details of the updates made to each ASPA can be found in the README file accompanying the updated layer.
+
+The downloadable dataset contains a folder with a points dataset, a folder with a polygon dataset, and a word document with further information.
+
+For ASPAS and ASMAs within the AAT please see: https://data.aad.gov.au/metadata/aspas_asmas_aat - doi:10.4225/15/5a963cbd74a3a.
+
+For the 2018 data update please see: https://data.aad.gov.au/metadata/AAS_4296_Updated_ASPAs_2018 - doi:10.26179/5c1b10c534c19.</Abstract>
+    <Purpose>Provide the most accurate spatial layer of Antarctic Specially Protected Areas.</Purpose>
+  </Summary>
+  <Related_URL>
+    <URL_Content_Type>
+      <Type>VIEW RELATED INFORMATION</Type>
+    </URL_Content_Type>
+    <URL>https://data.aad.gov.au/metadata/aspas_asmas_aat</URL>
+    <Description>See the source dataset from which these data are derived.</Description>
+  </Related_URL>
+  <Related_URL>
+    <URL_Content_Type>
+      <Type>PROJECT HOME PAGE</Type>
+    </URL_Content_Type>
+    <URL>https://projects.aad.gov.au/search_projects_results.cfm?project_no=AAS_4296</URL>
+    <Description>Public information for AAS project AAS_4296</Description>
+  </Related_URL>
+  <Related_URL>
+    <URL_Content_Type>
+      <Type>GET DATA</Type>
+      <Subtype>DIRECT DOWNLOAD</Subtype>
+    </URL_Content_Type>
+    <URL>https://data.aad.gov.au/eds/4831/download</URL>
+    <Description>Download the dataset</Description>
+  </Related_URL>
+  <Related_URL>
+    <URL_Content_Type>
+      <Type>EXTENDED METADATA</Type>
+    </URL_Content_Type>
+    <URL>https://data.aad.gov.au/metadata/AAS_4296_Updated_ASPAs_2018</URL>
+    <Description>See the 2018 data update</Description>
+  </Related_URL>
+  <Related_URL>
+    <URL_Content_Type>
+      <Type>VIEW RELATED INFORMATION</Type>
+    </URL_Content_Type>
+    <URL>https://data.aad.gov.au/aadc/metadata/citation.cfm?entry_id=AAS_4296_Updated_ASPAs_2018</URL>
+    <Description>Citation reference for this metadata record and dataset.</Description>
+  </Related_URL>
+  <IDN_Node>
+    <Short_Name>AMD/AU</Short_Name>
+  </IDN_Node>
+  <IDN_Node>
+    <Short_Name>AMD</Short_Name>
+  </IDN_Node>
+  <IDN_Node>
+    <Short_Name>CEOS</Short_Name>
+  </IDN_Node>
+  <Originating_Metadata_Node>AADC</Originating_Metadata_Node>
+  <Metadata_Name>CEOS IDN DIF</Metadata_Name>
+  <Metadata_Version>VERSION 9.9.3</Metadata_Version>
+  <DIF_Creation_Date>2024-11-07</DIF_Creation_Date>
+  <Last_DIF_Revision_Date>2024-11-07</Last_DIF_Revision_Date>
+  <DIF_Revision_History>2024-11-07 - record created by Dave Connell on behalf of Aleks Terauds.</DIF_Revision_History>
+  <Extended_Metadata>
+    <Metadata>
+      <Group>gov.nasa.gsfc.gcmd</Group>
+      <Name>metadata.uuid</Name>
+      <Value>5e03248d-9464-4405-9605-cef1cda5ebb9</Value>
+    </Metadata>
+    <Metadata>
+      <Group>gov.nasa.gsfc.gcmd</Group>
+      <Name>metadata.extraction_date</Name>
+      <Value>2024-11-07 13:28:46</Value>
+    </Metadata>
+    <Metadata>
+      <Group>gov.nasa.gsfc.gcmd</Group>
+      <Name>metadata.keyword_version</Name>
+      <Value>8.6</Value>
+    </Metadata>
+  </Extended_Metadata>
+</DIF>

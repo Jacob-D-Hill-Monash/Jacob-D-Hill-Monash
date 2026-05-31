@@ -1,0 +1,30 @@
+Title: Antarctic Specially Protected Areas (Points and Polygons) 2024 Update
+
+    Authors:
+    - ALEKS TERAUDS (INVESTIGATOR, TECHNICAL CONTACT, DIF AUTHOR)
+
+    Owner: Commonwealth of Australia
+
+    Citation: Terauds, A. (2024) Antarctic Specially Protected Areas (Points and Polygons) 2024 Update, Ver. 1,  <em>Australian Antarctic Data Centre</em> - <a href="http://dx.doi.org/doi:">doi:</a>, Accessed: 2024-11-07
+
+    Revision Date: 2024-11-07
+
+    Metadata URL: https://data.aad.gov.au/metadata/AAS_4296_Updated_ASPAs_2024
+
+    Abstract: This is the 2024 data update.  For the 2018 update, please see the link below.
+
+Starting with the most recently updated polygon shapefile of ASPAs (Terauds and Lee 2016), which contained some minor improvement on the original ASPA spatial layer first made publicly available in 2011, we first cross-checked the location of ASPA polygons with the spatially explicit locations provided in the ASPAs Management Plans. Once polygons were aligned with the Management Plans, we then georeferenced the maps provided in the management plans to check the ASPA boundaries in relation to known landscape features, In some cases, there was a lack of concurrence between co-ordinates, PDF map, coastline, rock layer or Google Earth. In these cases the following protocol was followed: snap to coordinates (unless clearly wrong), otherwise align to rock outcrop layer based on the PDF map, otherwise align to coastline. Full details of the updates made to each ASPA can be found in the README file accompanying the updated layer.
+
+The downloadable dataset contains a folder with a points dataset, a folder with a polygon dataset, and a word document with further information.
+
+For ASPAS and ASMAs within the AAT please see: https://data.aad.gov.au/metadata/aspas_asmas_aat - doi:10.4225/15/5a963cbd74a3a.
+
+For the 2018 data update please see: https://data.aad.gov.au/metadata/AAS_4296_Updated_ASPAs_2018 - doi:10.26179/5c1b10c534c19.
+
+    Use Constraints: This data set conforms to the CCBY Attribution License (http://creativecommons.org/licenses/by/4.0/).
+
+Please follow instructions listed in the citation reference provided at http://data.aad.gov.au/aadc/metadata/citation.cfm?entry_id=AAS_4296_Updated_ASPAs_2018 when using these data.
+
+    ID: 5998
+    Metadata ID: AAS_4296_Updated_ASPAs_2024
+    UUID: b4c92f68-64c3-476d-97eb-d439360415b9
