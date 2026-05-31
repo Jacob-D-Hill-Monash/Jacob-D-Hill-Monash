@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Australian antarctic bases",
+  "width": 800,
+  "height": 600,
+  "projection": {"type": "azimuthalEqualArea","rotate": [220,0,0]},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Jacob-D-Hill-Monash/FIT2179_A2/main/js/data/just_antarctic.json",
+        "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+      },
+      "mark": {"type": "geoshape","fill":null,"stroke": "darkgray"}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Jacob-D-Hill-Monash/FIT2179_A2/main/js/data/place_names.csv"
+      },
+      "mark": {"type": "circle", "opacity": 0.4, "size": 15},
+      "transform":  [{"filter": {"field": "AUS_DISPLAY_SCALE_25K", "equal":"Yes"}}],
+      "encoding": {
+        "longitude": {"field": "LONGITUDE", "type": "quantitative"},
+        "latitude": {"field": "LATITUDE", "type": "quantitative"},
+        "color": {
+          "field": "FEATURE_TYPE_NAME",
+          "type": "nominal",
+          "title": "Type",
+          "scale": {"type": "linear", "scheme": "turbo","reverse":false}
+        },
+        "shape": {
+          "field": "Type",
+          "type": "nominal",
+          "title": "Type"
+        },
+        "tooltip": [
+          {"field": "PLACE_NAME_MAPPING", "type": "nominal", "title": "Name"},
+          {"field": "FEATURE_TYPE_NAME", "type": "nominal", "title": "Type"},
+          {"field": "LATITUDE", "type": "quantitative", "title": "Latitude"},
+          {"field": "LONGITUDE", "type": "quantitative", "title": "Longitude"},
+          {"field": "NARRATIVE", "type": "nominal", "title": "Info"}
+        ]
+      }
+    }
+  ]
+}

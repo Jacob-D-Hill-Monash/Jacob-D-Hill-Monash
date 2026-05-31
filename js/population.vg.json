@@ -1,0 +1,19 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": { "text": "Maximum Population of Australian Stations" },
+    "data": {
+        "url": "https://raw.githubusercontent.com/Jacob-D-Hill-Monash/FIT2179_A2/main/js/data/Facilities_Nov2024.csv"
+    },
+    "mark": "bar",
+    "transform":  [{"filter": {"field": "Operator (primary)", "equal": "Australia"}}],
+    "encoding": {
+        "x": { "field": "Official Name", "type": "nominal"},
+        "y": { "field": "Peak Population", "type": "quantitative" },
+        "color": {
+            "field": "Type",
+            "type": "nominal",
+            "title": "Type",
+            "scale": {"type": "linear", "scheme": "turbo","reverse":false}
+        }
+    }
+}

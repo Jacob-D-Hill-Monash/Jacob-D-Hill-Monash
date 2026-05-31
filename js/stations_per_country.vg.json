@@ -1,0 +1,18 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": { "text": "Stations per country" },
+    "data": {
+        "url": "https://raw.githubusercontent.com/Jacob-D-Hill-Monash/FIT2179_A2/main/js/data/Facilities_Nov2024.csv"
+    },
+    "mark": "bar",
+    "encoding": {
+        "x": { "field": "Operator (primary)", "type": "nominal" },
+        "y": { "aggregate": "count", "type": "quantitative" },
+        "color": {
+            "field": "Type",
+            "type": "nominal",
+            "title": "Country",
+            "scale": {"type": "linear", "scheme": "turbo","reverse":false}
+        }
+    }
+}
