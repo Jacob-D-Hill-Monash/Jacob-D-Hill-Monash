@@ -9,8 +9,8 @@
     "mark": "bar",
     "transform":  [{"filter": {"field": "AUS_DISPLAY_SCALE_100K", "equal":"Yes"}}],
     "encoding": {
-        "x": { "field": "FEATURE_TYPE_NAME", "type": "nominal"},
-        "y": { "aggregate": "count", "type": "quantitative" },
+        "x": { "field": "FEATURE_TYPE_NAME", "type": "nominal","title":"Feature Type"},
+        "y": { "aggregate": "count", "type": "quantitative" ,"title":"Number of features"},
         "color": {
             "field": "FEATURE_TYPE_NAME",
             "type": "nominal",

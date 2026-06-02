@@ -26,7 +26,7 @@
         "tooltip": [
           {"field": "Official Name", "type": "nominal", "title": "Name"},
           {"field": "Operator (primary)", "type": "nominal", "title": "Country"},
-          {"field": "Year Established", "type": "quantitative", "title": "Year Established"},
+          {"field": "Year Established", "type": "temporal", "title": "Year Established"},
           {"field": "Type", "type": "nominal", "title": "Type"},
           {"field": "Peak Population", "type": "quantitative", "title": "Population"},
           {"field": "Latitude (DD)", "type": "quantitative", "title": "Latitude"},

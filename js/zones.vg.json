@@ -1,36 +1,60 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Antarctic Claims",
-  "width": 400,
-  "height": 600,
-  "projection": {"type": "azimuthalEqualArea","rotate": [225,90,0]},
-  "layer": [
-    {
-      "data": {
-        "url": "https://raw.githubusercontent.com/Jacob-D-Hill-Monash/FIT2179_A2/main/js/data/ne_110m.json",
-        "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
-      },
-      "mark": {"type": "geoshape","fill":null,"stroke": "darkgray"},
-      "encoding": {"tooltip":[{"field": "properties.NAME", "type": "nominal","title": "Unclamed"}]}
-    },
-    {
-      "data": {
-        "url": "https://raw.githubusercontent.com/Jacob-D-Hill-Monash/FIT2179_A2/main/js/data/output.json",
-        "format": {"type": "topojson", "feature": "claims_ps"}
-      },
-      "mark": {"type": "geoshape","stroke": "white","opacity": 0.6},
-      "encoding": {
-        "color": {
-          "field": "properties.COUNTRY",
-          "type": "nominal",
-          "title": "Country",
-          "scale": {"scheme": "rainbow","reverse":false}
+  "hconcat":[
+  {
+    "title": "Antarctic Claims",
+    "width": 500,
+    "height": 600,
+    "projection": {"type": "azimuthalEqualArea","rotate": [225,90,0]},
+    
+      "layer": [
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/Jacob-D-Hill-Monash/FIT2179_A2/main/js/data/ne_110m.json",
+            "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
+          },
+          "mark": {"type": "geoshape","fill":null,"stroke": "darkgray"},
+          "encoding": {"tooltip":[{"field": "properties.NAME", "type": "nominal","title": "Unclamed"}]}
         },
-        "tooltip": [
-          {"field": "properties.COUNTRY", "type": "nominal", "title": "Country"}
-        ]
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/Jacob-D-Hill-Monash/FIT2179_A2/main/js/data/output.json",
+            "format": {"type": "topojson", "feature": "claims_ps"}
+          },
+          "mark": {"type": "geoshape","stroke": "white","opacity": 0.6},
+          "encoding": {
+            "color": {
+              "field": "properties.COUNTRY",
+              "type": "nominal",
+              "title": "Country",
+              "scale": {"scheme": "rainbow","reverse":false}
+            },
+            "tooltip": [
+              {"field": "properties.COUNTRY", "type": "nominal", "title": "Country"}
+            ]
+          }
+        }
+      ]
+    },{
+      "title": { "text": "Area of territory claims per country" },
+      "width": 300,
+      "height": 600,
+      "data": {
+          "url": "https://raw.githubusercontent.com/Jacob-D-Hill-Monash/FIT2179_A2/main/js/data/Antarctic_Territorial_Claims_clean.csv"
+      },
+      "mark": "bar",
+      "encoding": {
+          "x": { "field": "COUNTRY", "type": "nominal"},
+          "y": { "field": "Area", "type": "quantitative","title":"Area (km^2)"},
+          "color": {
+              "field": "COUNTRY",
+              "type": "nominal",
+              "title": "Country",
+              "scale": {"type": "ordinal", "scheme": "rainbow","reverse":false}
+          }
       }
     }
   ],
+
   "config": {"title": {"font": "sans-serif", "fontSize": 14}}
 }

@@ -11,7 +11,7 @@
 
   "encoding": {
     "x": {"field": "properties.Propon", "type": "nominal","title": "Country"},
-    "y": { "aggregate":"count", "type": "quantitative","title":"Area (km^2)"},
+    "y": { "aggregate":"count", "type": "quantitative","title":"Number of protected areas"},
     "xOffset": {"field": "properties.Name"},
     "color": {
       "field": "properties.Propon",

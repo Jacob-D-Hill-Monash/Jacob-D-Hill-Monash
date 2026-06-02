@@ -3,20 +3,12 @@ vegaEmbed("#statmap", vg_1).then(function(result) {
 // Access the Vega view instance(https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
 
-var vg_2 = "js/population.vg.json";
-vegaEmbed("#pop", vg_2).then(function(result) {
-}).catch(console.error);
-
 var vg_3 = "js/zones.vg.json";
 vegaEmbed("#zonemap", vg_3).then(function(result) {
 }).catch(console.error);
 
 var vg_4 = "js/stations_per_country.vg.json";
 vegaEmbed("#station", vg_4).then(function(result) {
-}).catch(console.error);
-
-var vg_5 = "js/claim_area.vg.json";
-vegaEmbed("#claimarea", vg_5).then(function(result) {
 }).catch(console.error);
 
 var vg_6 = "js/stationTypes.vg.json";
