@@ -1,11 +1,13 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": { "text": "Key features in Australian teritory" },
+    "width": 800,
+    "height": 300,
     "data": {
         "url": "https://raw.githubusercontent.com/Jacob-D-Hill-Monash/FIT2179_A2/main/js/data/place_names.csv"
     },
     "mark": "bar",
-    "transform":  [{"filter": {"field": "AUS_DISPLAY_SCALE_1K", "equal":"Yes"}}],
+    "transform":  [{"filter": {"field": "AUS_DISPLAY_SCALE_100K", "equal":"Yes"}}],
     "encoding": {
         "x": { "field": "FEATURE_TYPE_NAME", "type": "nominal"},
         "y": { "aggregate": "count", "type": "quantitative" },
@@ -13,7 +15,12 @@
             "field": "FEATURE_TYPE_NAME",
             "type": "nominal",
             "title": "Type",
+            "legend":null,
             "scale": {"type": "linear", "scheme": "turbo","reverse":false}
-        }
-    }
+        },
+        "tooltip": [
+          {"aggregate": "count", "type": "quantitative", "title": "Count"}
+        ]
+    },
+    "config": {"title": {"font": "sans-serif", "fontSize": 14}}
 }

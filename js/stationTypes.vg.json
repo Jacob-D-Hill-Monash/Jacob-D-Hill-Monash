@@ -1,20 +1,27 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": { "text": "Stations per country" },
+    "title": { "text": "Timeline of new stations" },
     "width": 800,
     "height": 300,
     "data": {
         "url": "https://raw.githubusercontent.com/Jacob-D-Hill-Monash/FIT2179_A2/main/js/data/Facilities_Nov2024.csv"
     },
-    "mark": {"type": "bar", "stroke":"black"},
+    "mark": {"type": "point"},
+    "transform":  [{"filter": {"field": "Peak Population", "gt": 0}}],
     "encoding": {
-        "x": { "field": "Operator (primary)", "type": "nominal" ,"title":"Primary Operator Country"},
-        "y": { "aggregate": "count", "type": "quantitative","title":"Number of locations"},
+        "x": { "field": "Year Established", "type": "temporal" ,"title":"Primary Operator Country"},
+        "y": { "field": "Peak Population", "type": "quantitative"},
         "color": {
-            "field": "Type",
+            "field": "Operator (primary)",
             "type": "nominal",
             "title": "Type",
+            "legend":{"orient": "bottom","columns": 9,"symbolLimit": 2000},
             "scale": {"type": "linear", "scheme": "turbo","reverse":false}
+        },
+        "shape":{
+            "field":"Type",
+            "type": "nominal",
+            "legend": {}
         },
         "tooltip": [
           {"field": "Official Name", "type": "nominal", "title": "Name"},

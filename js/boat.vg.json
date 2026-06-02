@@ -1,0 +1,32 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": { "text": "Size of all official antartic vessels" },
+    "width": 800,
+    "height": 300,
+    "data": {
+        "url": "https://raw.githubusercontent.com/Jacob-D-Hill-Monash/FIT2179_A2/main/js/data/Vessels+in+operation_Nov2024.csv"
+    },
+    "mark": "bar",
+    "transform":  [
+        {"filter": {"field": "Length (m)", "gt": 1}}
+    ],
+    "encoding": {
+        "x": { "field": "Name", "type": "nominal"},
+        "y": { "field": "Length (m)", "type": "quantitative" },
+        "color": {
+            "field": "Country",
+            "type": "nominal",
+            "title": "Country",
+            "scale": {"type": "linear", "scheme": "turbo","reverse":false}
+        },
+        "tooltip": [
+          {"field": "Country", "type": "nominal"},
+          {"field": "Type of Vessel", "type": "nominal"},
+          {"field": "Length (m)", "type": "quantitative"},
+          {"field": "Maximum Crew", "type": "quantitative"},
+          {"field": "Maximum Passenger", "type": "quantitative"},
+          {"field": "On-board helicopter - Yes", "type": "nominal", "title": "On-board helicopter"}
+        ]
+    },
+    "config": {"title": {"font": "sans-serif", "fontSize": 14}}
+}

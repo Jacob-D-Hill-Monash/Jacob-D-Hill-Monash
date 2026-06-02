@@ -1,0 +1,21 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": { "text": "Area of territory claims per country" },
+    "width": 600,
+    "height": 300,
+    "data": {
+        "url": "https://raw.githubusercontent.com/Jacob-D-Hill-Monash/FIT2179_A2/main/js/data/Antarctic_Territorial_Claims_clean.csv"
+    },
+    "mark": "bar",
+    "encoding": {
+        "x": { "field": "COUNTRY", "type": "nominal"},
+        "y": { "field": "Area", "type": "quantitative","title":"Area (km^2)"},
+        "color": {
+            "field": "COUNTRY",
+            "type": "nominal",
+            "title": "Country",
+            "scale": {"type": "ordinal", "scheme": "rainbow","reverse":false}
+        }
+    },
+    "config": {"title": {"font": "sans-serif", "fontSize": 14}}
+}
